@@ -1,0 +1,21 @@
+Source: adaptation-droidian-exynos9810
+Maintainer: Bardia Moshiri
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.5.0.3
+Vcs-Browser: https://github.com/sexynos/adaptation-droidian-exynos9810
+Vcs-Git: https://github.com/sexynos/adaptation-droidian-exynos9810.git
+
+Package: adaptation-droidian-exynos9810
+Architecture: all
+Depends: ${misc:Depends},
+         adaptation-hybris-api29-phone,
+         adaptation-exynos9810-configs,
+Description: adapatation-exynos9810-meta
+ garden api29 adaptation metapackage
+
+Package: adaptation-exynos9810-configs
+Architecture: all
+Depends: ${misc:Depends},
+Description: exynos9810's adaptation configs

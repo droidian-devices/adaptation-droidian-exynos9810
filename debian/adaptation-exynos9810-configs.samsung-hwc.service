@@ -1,0 +1,20 @@
+[Unit]
+Description=Workaround for some Exynos devices
+Before=phosh.service
+After=lxc@android.service
+Depends=lxc@android.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/usr/bin/sleep 5
+ExecStartPre=/usr/bin/waitforservice init.svc.vendor.hwcomposer-*
+ExecStart=/usr/bin/mount -o bind /dev/null /vendor/lib64/hw/hwcomposer.exynos9810.so 
+# reenable audio HAL service 
+#ExecStartPost=mount -o bind /usr/lib/droid-system-overlay/etc/init/init.disabled.rc /var/lib/lxc/android/rootfs/system/etc/init/init.disabled.rc
+# use audio.hidl_compat wrapper HAL
+#ExecStartPost=mount -o bind /system/lib64/hw/audio.hidl_compat.default.so /vendor/lib64/hw/audio.primary.default.so
+ExecStop=-/usr/bin/umount /vendor/lib64/hw/hwcomposer.exynos9810.so 
+
+[Install]
+WantedBy=graphical.target

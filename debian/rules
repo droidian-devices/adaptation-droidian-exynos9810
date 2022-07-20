@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_installsystemd:
+	dh_installsystemd -padaptation-exynos9810-configs --name=apt-fix apt-fix.service --no-start
+	dh_installsystemd -padaptation-exynos9810-configs --name=samsung-hwc samsung-hwc.service --no-start

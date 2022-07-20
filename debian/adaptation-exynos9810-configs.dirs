@@ -1,0 +1,4 @@
+/etc
+/etc/udev/rules.d
+/usr/share/keyrings
+/usr/lib/droid-system-overlay/etc/init
