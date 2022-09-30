@@ -1,0 +1,11 @@
+[Unit]
+Description=fix system time at boot because timesynced is disabled 
+After=phosh.service
+
+[Service]
+ExecStart=/usr/bin/epochfix
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

@@ -3,4 +3,5 @@
 /etc/systemd/system
 /usr/share/keyrings
 /usr/lib/droid-system-overlay/etc/init
+/usr/bin/
 /deb

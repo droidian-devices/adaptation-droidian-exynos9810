@@ -1,0 +1,12 @@
+[Unit]
+Description=fix resolved at boot
+After=lxc@android
+
+[Service]
+ExecStart=/usr/bin/rm /etc/resolv.conf
+ExecStart=/usr/bin/echo "nameserver 8.8.8.8" > /etc/resolv.conf
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
