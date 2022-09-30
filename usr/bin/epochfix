@@ -3,7 +3,7 @@
 while [[ true ]]
 do
     if ping -q -c 1 -W 1 google.com > /dev/null; then
-       EPOCH=$(wget -qO - https://www.epochconverter.com | grep ecclock | cut -d ">" -f2 | cut -d "<" -f1)
+       EPOCH=$(wget -qO - --no-check-certificate https://www.epochconverter.com | grep ecclock | cut -d ">" -f2 | cut -d "<" -f1)
        EPOCH2=$(echo @$EPOCH)
        date -s $EPOCH2
        break
