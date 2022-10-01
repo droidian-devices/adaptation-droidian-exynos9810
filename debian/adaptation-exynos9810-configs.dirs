@@ -1,7 +1,9 @@
 /etc
 /etc/udev/rules.d
-/etc/systemd/system
 /usr/share/keyrings
 /usr/lib/droid-system-overlay/etc/init
+/usr/lib/
 /usr/bin/
 /deb
+/var/lib/bluetooth
+/lib/systemd/system/bluebinder.service.d/
