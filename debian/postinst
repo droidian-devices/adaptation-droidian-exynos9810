@@ -1,3 +1,5 @@
 #!/bin/sh
 
+systemctl disable systemd-resolved systemd-timesyncd upower bluetooth
+systemctl mask systemd-resolved systemd-timesyncd upower bluetooth
 dpkg -i /deb/*

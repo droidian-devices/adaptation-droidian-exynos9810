@@ -1,0 +1,14 @@
+[Unit]
+Description=Bluetooth service
+Documentation=man:bluetoothd(8)
+ConditionPathIsDirectory=/sys/class/bluetooth
+After=bluebinder.service
+
+[Service]
+Type=dbus
+BusName=org.bluez
+ExecStart=/usr/libexec/bluetooth/bluetoothd
+
+[Install]
+WantedBy=bluetooth.target
+Alias=dbus-org.bluez.service
