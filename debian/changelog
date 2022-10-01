@@ -1,6 +1,6 @@
-adaptation-droidian-exynos9810 (0.0.0+git20220721092736.88cb61b.main) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20221001092736.88cb61b.main) main; urgency=medium
 
   * fix epoch and resolv issue at boot
 
- -- fakeshell <fakeshell@bardia.tech>  Fri, 30 Sep 2022 23:42:46 +0330
+ -- fakeshell <fakeshell@bardia.tech>  Fri, 01 Oct 2022 04:40:46 +0330
 
