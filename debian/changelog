@@ -1,6 +1,6 @@
-adaptation-droidian-exynos9810 (0.0.0+git20221002092736.88cb61b.main) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20221027092736.88cb61b.main) main; urgency=medium
 
-  * fix bluetooth and upower
+  * add batman
 
- -- fakeshell <fakeshell@bardia.tech>  Fri, 02 Oct 2022 00:30:26 +0330
+ -- fakeshell <fakeshell@bardia.tech>  Thu, 27 Oct 2022 01:26:40 +0330
 
