@@ -1,3 +1,2 @@
 /usr/lib/adaptation-droidian-exynos9810/sources.list.d/exynos9810.list /etc/apt/sources.list.d/exynos9810.list
 /usr/lib/adaptation-droidian-exynos9810/sources.list.d/samsung-wlroots.list /etc/apt/sources.list.d/samsung-wlroots.list
-/usr/lib/adaptation-droidian-exynos9810/sources.list.d/batman.list /etc/apt/sources.list.d/batman.list
