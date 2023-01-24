@@ -1,10 +1,12 @@
 /etc
 /etc/udev/rules.d
 /usr/share/keyrings
+/usr/share/applications
+/usr/share/icons
 /usr/lib/droid-system-overlay/etc/init
 /usr/lib/
 /usr/bin/
 /deb
 /var/lib/bluetooth
 /var/lib/batman
-/lib/systemd/system/bluebinder.service.d/
+/lib/systemd/system/bluebinder.service.d

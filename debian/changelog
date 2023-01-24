@@ -1,6 +1,6 @@
-adaptation-droidian-exynos9810 (0.0.0+git20230110092736.88cb61b.main) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20230124092736.88cb61b.main) main; urgency=medium
 
-  * disable dpkg install on postinst
+  * add flashlight files
 
- -- fakeshell <fakeshell@bardia.tech>  Mon, 10 Nov 2022 01:25:30 +0330
+ -- fakeshell <fakeshell@bardia.tech>  Tue, 24 Jan 2022 05:15:30 +0330
 

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Flashlight ON
+Exec=/bin/sh -c "echo 1 > /sys/devices/virtual/camera/flash/rear_flash"
+Icon=/usr/share/icons/flashlight.png
