@@ -1,5 +1,5 @@
 [Unit]
-Description=fix system time at boot because timesynced is disabled 
+Description=fix system time at boot because timesynced is disabled
 After=phosh.service
 
 [Service]

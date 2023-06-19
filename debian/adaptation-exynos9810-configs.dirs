@@ -6,7 +6,5 @@
 /usr/lib/droid-system-overlay/etc/init
 /usr/lib/
 /usr/bin/
-/deb
 /var/lib/bluetooth
-/var/lib/batman
 /lib/systemd/system/bluebinder.service.d

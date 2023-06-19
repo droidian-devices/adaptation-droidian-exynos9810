@@ -1,6 +1,5 @@
-adaptation-droidian-exynos9810 (0.0.0+git20230124092736.88cb61b.main) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git2023061823235801.9cbb10c.bookworm) main; urgency=medium
 
-  * add flashlight files
+  * drop batman as its now upstream
 
- -- fakeshell <fakeshell@bardia.tech>  Tue, 24 Jan 2022 05:15:30 +0330
-
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Sun, 18 Jun 2023 23:23:58 -0400

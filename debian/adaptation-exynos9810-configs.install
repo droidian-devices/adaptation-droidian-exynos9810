@@ -1,5 +1,4 @@
 etc/* /etc
 usr/* /usr
-deb/* /deb
 var/* /var
 lib/* /lib

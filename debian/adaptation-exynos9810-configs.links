@@ -1,2 +1,5 @@
 /usr/lib/adaptation-droidian-exynos9810/sources.list.d/exynos9810.list /etc/apt/sources.list.d/exynos9810.list
-/usr/lib/adaptation-droidian-exynos9810/sources.list.d/samsung-wlroots.list /etc/apt/sources.list.d/samsung-wlroots.list
+/dev/null /etc/systemd/system/bluetooth.service
+/dev/null /etc/systemd/system/systemd-resolved.service
+/dev/null /etc/systemd/system/systemd-timesyncd.service
+/dev/null /etc/systemd/system/upower.service

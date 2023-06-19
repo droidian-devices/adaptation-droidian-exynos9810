@@ -10,4 +10,3 @@ override_dh_installsystemd:
 	dh_installsystemd -padaptation-exynos9810-configs --name=epoch epoch.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=upoweralt upoweralt.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=bluetoothalt bluetoothalt.service --no-start
-	dh_installsystemd -padaptation-exynos9810-configs --name=batman batman.service --no-start
