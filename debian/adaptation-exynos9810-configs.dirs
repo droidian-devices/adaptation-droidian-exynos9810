@@ -1,8 +1,4 @@
-/etc
 /etc/udev/rules.d
-/usr/share/keyrings
-/usr/share/applications
-/usr/share/icons
 /usr/lib/droid-system-overlay/etc/init
 /usr/lib/
 /usr/bin/

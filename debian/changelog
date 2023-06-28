@@ -1,5 +1,5 @@
-adaptation-droidian-exynos9810 (0.0.0+git2023061823235801.9cbb10c.bookworm) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git2023062816472601.8d6f36e.main) main; urgency=medium
 
-  * drop batman as its now upstream
+  * drop resolv.conf
 
- -- Bardia Moshiri <fakeshell@bardia.tech>  Sun, 18 Jun 2023 23:23:58 -0400
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Wed, 28 Jun 2023 16:47:26 -0400
