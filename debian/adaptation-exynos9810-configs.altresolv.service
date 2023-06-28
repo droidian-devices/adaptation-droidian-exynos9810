@@ -1,6 +1,6 @@
 [Unit]
 Description=fix resolved at boot
-After=lxc@android
+After=lxc@android.service
 
 [Service]
 ExecStart=/usr/bin/rm /etc/resolv.conf

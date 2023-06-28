@@ -2,7 +2,7 @@
 Description=Workaround for some Exynos devices
 Before=phosh.service
 After=lxc@android.service
-Depends=lxc@android.service
+Requires=lxc@android.service
 
 [Service]
 Type=oneshot
