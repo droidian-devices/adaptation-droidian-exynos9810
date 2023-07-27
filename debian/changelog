@@ -1,4 +1,4 @@
-adaptation-droidian-exynos9810 (0.0.0+git2023062816472601.8d6f36e.main+git20230628165546.7b3726a.release+git20230727003444.4470250.release) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20230727140630.8ff6a5d.release) main; urgency=medium
 
   * add adaptation files
   * build fixes
@@ -30,6 +30,8 @@ adaptation-droidian-exynos9810 (0.0.0+git2023062816472601.8d6f36e.main+git202306
   * drop resolv.conf
   * drop flashlight related files
   * adpat to upstream droidian
+  * udev: disable swlan0
+  * implement getepoch
 
- -- Bardia Moshiri <fakeshell@bardia.tech>  Thu, 27 Jul 2023 00:34:44 -0400
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Thu, 27 Jul 2023 14:06:30 -0400
 

@@ -1,0 +1,11 @@
+[Unit]
+Description=mount sensorfw exynos config on top of hybris config
+Before=sensorfwd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=mount --bind /etc/sensorfw/sensord-exynos9810.conf /etc/sensorfw/sensord-hybris.conf
+
+[Install]
+WantedBy=graphical.target
