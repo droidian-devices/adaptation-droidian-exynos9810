@@ -2,4 +2,3 @@
 /dev/null /etc/systemd/system/bluetooth.service
 /dev/null /etc/systemd/system/systemd-resolved.service
 /dev/null /etc/systemd/system/systemd-timesyncd.service
-/dev/null /etc/systemd/system/upower.service

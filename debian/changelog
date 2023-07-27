@@ -1,5 +1,35 @@
-adaptation-droidian-exynos9810 (0.0.0+git2023062816472601.8d6f36e.main) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git2023062816472601.8d6f36e.main+git20230628165546.7b3726a.release+git20230727003444.4470250.release) main; urgency=medium
 
+  * add adaptation files
+  * build fixes
+  * build fixes and mask a few services
+  * add scale to fit scripts and keyring for apt repo
+  * add apt repo itself
+  * update changelog
+  * add deb packages aswell as postrm
+  * Delete tmp/debs directory
+  * Delete adapt.sh
+  * fix epoch and resolv issue at boot
+  * add epoch scriipt
+  * epoch fixes
+  * hide unused cursor
+  * typos
+  * fix bluetooth upower and typos
+  * add bluebinder crash fix
+  * add batman
+  * add wlr-randr
+  * upstream batman
+  * add fakeshell.gpg for batman
+  * fix typo
+  * remove batman.list
+  * remove dpkg from postinst
+  * remove batman.list symlink
+  * add flashlight files
+  * drop batman as its now upstream
+  * systemd: Require lxc@android instead of depends
   * drop resolv.conf
+  * drop flashlight related files
+  * adpat to upstream droidian
 
- -- Bardia Moshiri <fakeshell@bardia.tech>  Wed, 28 Jun 2023 16:47:26 -0400
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Thu, 27 Jul 2023 00:34:44 -0400
+
