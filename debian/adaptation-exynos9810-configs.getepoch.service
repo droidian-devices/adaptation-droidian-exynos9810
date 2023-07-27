@@ -1,0 +1,9 @@
+[Unit]
+Description=set epoch on startup
+After=lxc@android.service
+
+[Service]
+ExecStart=/usr/bin/getepoch
+
+[Install]
+WantedBy=multi-user.target

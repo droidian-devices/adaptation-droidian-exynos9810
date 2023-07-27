@@ -3,8 +3,12 @@
 %:
 	dh $@
 
+override_dh_auto_build:
+	gcc -o usr/bin/getepoch src/getepoch.c -lcurl
+
 override_dh_installsystemd:
 	dh_installsystemd -padaptation-exynos9810-configs --name=apt-fix apt-fix.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=altresolv altresolv.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=bluetoothalt bluetoothalt.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=audio-hidl audio-hidl.service --no-start
+	dh_installsystemd -padaptation-exynos9810-configs --name=getepoch getepoch.service --no-start
