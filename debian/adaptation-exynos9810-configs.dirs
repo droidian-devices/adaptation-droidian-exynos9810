@@ -7,4 +7,5 @@
 /usr/share/glib-2.0/schemas/
 /usr/bin
 /var/lib/bluetooth
+/var/lib/batman
 /lib/systemd/system/bluebinder.service.d
