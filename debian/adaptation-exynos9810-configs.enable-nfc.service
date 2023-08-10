@@ -1,0 +1,11 @@
+[Unit]
+Description=Enable NFC service in the container on startup
+Before=nfcd.service
+After=lxc@android.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'setprop ctl.start nfc_hal_service'
+
+[Install]
+WantedBy=multi-user.target
