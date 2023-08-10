@@ -3,3 +3,4 @@
 /dev/null /etc/systemd/system/systemd-resolved.service
 /dev/null /etc/systemd/system/systemd-timesyncd.service
 /dev/null /etc/systemd/system/iio-sensor-proxy.service
+/dev/null /etc/systemd/system/hadess-sensorfw-proxy.service
