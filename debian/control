@@ -12,7 +12,6 @@ Architecture: arm64
 Depends: ${misc:Depends},
          adaptation-hybris-api29-phone,
          adaptation-exynos9810-configs,
-         bixby-state,
          droidian-camera,
 Description: adapatation-exynos9810-meta
  exynos9810 api29 adaptation metapackage
