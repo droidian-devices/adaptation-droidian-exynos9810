@@ -1,0 +1,20 @@
+# full override of systemd-udevd with most isolation/namespacing values stripped out to work on exynos
+
+[Unit]
+Description=Rule-based Manager for Device Events and Files
+Documentation=man:systemd-udevd.service(8) man:udev(7)
+DefaultDependencies=no
+After=systemd-sysusers.service systemd-hwdb-update.service
+Before=sysinit.target
+ConditionPathIsReadWrite=/sys
+
+[Service]
+CapabilityBoundingSet=~CAP_SYS_TIME CAP_WAKE_ALARM
+Delegate=pids
+Type=notify
+OOMScoreAdjust=-1000
+Sockets=systemd-udevd-control.socket systemd-udevd-kernel.socket
+Restart=always
+RestartSec=0
+ExecStart=/lib/systemd/systemd-udevd
+ExecReload=udevadm control --reload --timeout 0

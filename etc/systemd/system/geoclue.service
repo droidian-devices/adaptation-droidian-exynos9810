@@ -1,3 +1,5 @@
+# full override of geoclue with most isolation/namespacing values stripped out to work on exynos
+
 [Unit]
 Description=Location Lookup Service
 
