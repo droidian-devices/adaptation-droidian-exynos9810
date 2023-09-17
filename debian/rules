@@ -12,5 +12,5 @@ override_dh_installsystemd:
 	dh_installsystemd -padaptation-exynos9810-configs --name=bluetoothalt bluetoothalt.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=getepoch getepoch.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=hadess-sensorfw-proxy hadess-sensorfw-proxy.service --no-start
-	dh_installsystemd -padaptation-exynos9810-configs --name=sensorfw-exynos-config sensorfw-exynos-config.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=enable-nfc enable-nfc.service --no-start
+	dh_installsystemd -padaptation-exynos9810-configs --name=droidian-perf droidian-perf.service --no-start
