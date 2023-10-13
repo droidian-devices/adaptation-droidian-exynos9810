@@ -1,0 +1,12 @@
+[Unit]
+Description=setup zram on startup
+After=lxc@android.service
+Depends=lxc@android.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/setup-zram.sh
+
+[Install]
+WantedBy=graphical.target
