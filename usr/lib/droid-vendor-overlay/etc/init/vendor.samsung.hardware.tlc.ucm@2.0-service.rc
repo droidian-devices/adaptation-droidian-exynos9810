@@ -1,0 +1,3 @@
+service ucmtlc-hal-service /vendor/bin/true
+    disabled
+    oneshot

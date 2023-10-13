@@ -1,0 +1,3 @@
+service timaserv /vendor/bin/true
+    oneshot
+    disabled

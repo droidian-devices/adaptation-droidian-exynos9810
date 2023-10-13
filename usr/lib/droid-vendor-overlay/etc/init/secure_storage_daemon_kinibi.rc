@@ -1,0 +1,4 @@
+# Secure Storage startup
+service secure_storage secure_storage_daemon_HALIUM_DISABLED
+    disabled
+    override

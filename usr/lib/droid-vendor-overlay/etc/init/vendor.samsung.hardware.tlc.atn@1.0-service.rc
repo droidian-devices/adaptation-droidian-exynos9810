@@ -1,0 +1,3 @@
+service atnserv /vendor/bin/true
+    oneshot
+    disabled

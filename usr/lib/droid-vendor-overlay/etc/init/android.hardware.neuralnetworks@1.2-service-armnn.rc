@@ -1,0 +1,3 @@
+service neuralnetworks_hal_service_armnn android.hardware.neuralnetworks@1.2-service-armnn_HALIUM_DISABLED
+    disabled
+    override

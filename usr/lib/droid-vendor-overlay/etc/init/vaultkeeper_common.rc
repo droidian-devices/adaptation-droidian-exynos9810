@@ -1,0 +1,8 @@
+# VaultKeeper
+service vaultkeeper vaultkeeperd_HALIUM_DISABLED
+    disabled
+    override
+
+service vaultkeeper_hal vendor.samsung.hardware.security.vaultkeeper@1.0-service_HALIUM_DISABLED
+    disabled
+    override

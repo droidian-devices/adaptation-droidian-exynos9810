@@ -1,0 +1,3 @@
+service cass cass_HALIUM_DISABLED
+    disabled
+    override

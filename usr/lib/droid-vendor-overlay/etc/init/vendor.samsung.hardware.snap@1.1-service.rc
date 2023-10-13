@@ -1,0 +1,3 @@
+service snapserv vendor.samsung.hardware.snap@1.1-service_HALIUM_DISABLED
+    disabled
+    override

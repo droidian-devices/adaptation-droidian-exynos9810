@@ -1,0 +1,4 @@
+# Process Authenticator startup
+service proca vendor.samsung.hardware.security.proca@2.0-service_HALIUM_DISABLED
+    override
+    disabled
