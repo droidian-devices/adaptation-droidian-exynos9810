@@ -1,4 +1,4 @@
-adaptation-droidian-exynos9810 (0.0.0+git20230727140630.8ff6a5d.release) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20231013155618.0208494.release) main; urgency=medium
 
   * add adaptation files
   * build fixes
@@ -32,6 +32,30 @@ adaptation-droidian-exynos9810 (0.0.0+git20230727140630.8ff6a5d.release) main; u
   * adpat to upstream droidian
   * udev: disable swlan0
   * implement getepoch
+  * add hadess-sensorfw-proxy dedicated service and correct sensorfw transformation matrix
+  * wait for miniaf to start before mounting audio
+  * force logd to not start
+  * add batman exynos cpu limit signature file
+  * debian: mask hadess sensorfw proxy for now
+  * debian: add nfc service
+  * add bixby-action configs
+  * add override geoclue service
+  * add copyright headers
+  * change event node of bixby from 9 to 6
+  * android-mount: don't fail if logd isnt running
+  * debian: build as arm64
+  * debian: add bixby-state to meta
+  * drop audio-hal in favor of a drop in
+  * Revert "debian: add bixby-state to meta"
+  * systemd: add systemd-udevd override service
+  * override sensorfw and drop sensorfw-exynos-config
+  * add droidian-perf
+  * vendor-overlay: disable a bunch of useless services
+  * add zram setup script and service
+  * Revert "Revert "debian: add bixby-state to meta""
+  * sources: use the new repo
+  * drop phoc scripts
+  * debian: fix indent in rules
 
- -- Bardia Moshiri <fakeshell@bardia.tech>  Thu, 27 Jul 2023 14:06:30 -0400
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Fri, 13 Oct 2023 15:56:18 -0400
 
