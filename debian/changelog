@@ -1,4 +1,4 @@
-adaptation-droidian-exynos9810 (0.0.0+git20231013155618.0208494.release) main; urgency=medium
+adaptation-droidian-exynos9810 (0.0.0+git20231119142247.d9e772f.release) main; urgency=medium
 
   * add adaptation files
   * build fixes
@@ -56,6 +56,15 @@ adaptation-droidian-exynos9810 (0.0.0+git20231013155618.0208494.release) main; u
   * sources: use the new repo
   * drop phoc scripts
   * debian: fix indent in rules
+  * debian: bump changelog
+  * systemd: add replacement polkit service
+  * systemd: add replacement upower service
+  * systemd: add replacement iio-sensor-proxy service
+  * debian: mask systemd-coredump.socket
+  * systemd: add systemd-* override services without isolation and namespaces
+  * vendor-overlay: re enable android.hardware.health
+  * systemd: allow gst droid to work
+  * systemd: override systemd-timesyncd and unmask
 
- -- Bardia Moshiri <fakeshell@bardia.tech>  Fri, 13 Oct 2023 15:56:18 -0400
+ -- Bardia Moshiri <fakeshell@bardia.tech>  Sun, 19 Nov 2023 14:22:47 -0500
 
