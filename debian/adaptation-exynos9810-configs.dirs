@@ -1,4 +1,4 @@
-/etc/systemd/system/android-mount.service.d
+/etc/systemd/system
 /etc/udev/rules.d
 /etc/phosh
 /usr/lib/droid-system-overlay/etc/init
@@ -6,6 +6,5 @@
 /usr/lib/systemd/system/android-service@hwcomposer.service.d
 /usr/share/glib-2.0/schemas/
 /usr/bin
-/var/lib/bluetooth
 /var/lib/batman
 /lib/systemd/system/bluebinder.service.d
