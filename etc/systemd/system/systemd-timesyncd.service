@@ -1,0 +1,29 @@
+[Unit]
+Description=Network Time Synchronization
+Documentation=man:systemd-timesyncd.service(8)
+ConditionCapability=CAP_SYS_TIME
+ConditionVirtualization=!container
+DefaultDependencies=no
+After=systemd-sysusers.service
+Before=time-set.target sysinit.target shutdown.target
+Conflicts=shutdown.target
+Wants=time-set.target
+
+[Service]
+BusName=org.freedesktop.timesync1
+# Turn off DNSSEC validation for hostname look-ups, since those need the
+# correct time to work, but we likely won't acquire that without NTP. Let's
+# break this chicken-and-egg cycle here.
+Environment=SYSTEMD_NSS_RESOLVE_VALIDATE=0
+ExecStart=!!/lib/systemd/systemd-timesyncd
+Restart=always
+RestartSec=0
+RuntimeDirectory=systemd/timesync
+StateDirectory=systemd/timesync
+Type=notify
+User=systemd-timesync
+WatchdogSec=3min
+
+[Install]
+WantedBy=sysinit.target
+Alias=dbus-org.freedesktop.timesync1.service
