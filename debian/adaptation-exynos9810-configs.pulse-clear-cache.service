@@ -1,0 +1,12 @@
+[Unit]
+Description=purge pulseaudio and alsa cache
+Before=android-mount.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=rm -rf /var/lib/alsa
+ExecStart=rm -rf /home/droidian/.config/pulse
+
+[Install]
+WantedBy=multi-user.target
