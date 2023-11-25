@@ -1,3 +1,2 @@
-/usr/lib/adaptation-droidian-exynos9810/sources.list.d/exynos9810.list /etc/apt/sources.list.d/exynos9810.list
 /dev/null /etc/systemd/system/systemd-resolved.service
 /dev/null /etc/systemd/system/systemd-coredump.socket

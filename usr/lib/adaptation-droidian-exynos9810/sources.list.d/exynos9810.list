@@ -1,1 +1,0 @@
-deb [arch=arm64 signed-by=/usr/share/keyrings/exynos9810.gpg] http://repo.bardia.tech/ trixie main
