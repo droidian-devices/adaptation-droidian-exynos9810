@@ -1,0 +1,12 @@
+[Unit]
+Description=battery management for Linux phones
+Requires=upower.service
+After=phosh.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/bin/batman
+
+[Install]
+WantedBy=multi-user.target
