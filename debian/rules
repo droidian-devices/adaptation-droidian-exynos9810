@@ -13,3 +13,4 @@ override_dh_installsystemd:
 	dh_installsystemd -padaptation-exynos9810-configs --name=enable-nfc enable-nfc.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=setup-zram setup-zram.service --no-start
 	dh_installsystemd -padaptation-exynos9810-configs --name=pulse-clear-cache pulse-clear-cache.service --no-start
+	dh_installsystemd -padaptation-exynos9810-configs --name=droidian-perf droidian-perf.service --no-start
