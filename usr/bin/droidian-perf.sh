@@ -28,3 +28,7 @@
 [ -f /sys/kernel/rcu_normal ] && echo 1 > /sys/kernel/rcu_normal # spotted on sm7125 and sdm670 and sdm845 exynos9819
 [ -f /sys/kernel/rcu_expedited ] && echo 0 > /sys/kernel/rcu_expedited # spotted on sm7125 and msm8996 and sdm670 and sdm845 exynos9810
 [ -f /sys/module/spurious/parameters/noirqdebug ] && echo 1 > /sys/module/spurious/parameters/noirqdebug # spotted on sm7125 and msm8996 and sdm670 and sdm845 exynos9810
+[ -f /sys/class/misc/mali0/device/tmu ] && echo 0 > /sys/class/misc/mali0/device/tmu # spotted on exynos9810
+[ -f /sys/class/misc/mali0/device/highspeed_load ] && echo 76 > /sys/class/misc/mali0/device/highspeed_load # spotted on exynos9810
+[ -f /sys/class/misc/mali0/device/dvfs ] && echo 0 > /sys/class/misc/mali0/device/dvfs # spotted on exynos9810
+[ -f /sys/class/misc/mali0/device/power_policy ] && echo always_on > /sys/class/misc/mali0/device/power_policy # spotted on exynos9810
